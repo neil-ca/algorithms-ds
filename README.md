@@ -1,1 +1,1 @@
-# Serie of algorithms in go
+# Collection of algorithms in go
