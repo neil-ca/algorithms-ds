@@ -25,6 +25,14 @@ func (linkedList *LinkedList) AddToHead(property int) {
 	}
 	linkedList.headNode = &node
 }
+
+// IterateList method iterates over LinkedList
+func (linkedList *LinkedList) IterateList() {
+	var node *Node
+	for node = linkedList.headNode; node != nil; node = node.nextNode {
+		fmt.Println(node.property)
+	}
+}
 func main() {
 	var linkedList LinkedList
 	linkedList = LinkedList{}
