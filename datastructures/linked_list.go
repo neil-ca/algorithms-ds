@@ -57,6 +57,18 @@ func (linkedList *LinkedList) AddToEnd(property int) {
 		lastNode.nextNode = node
 	}
 }
+
+// NodeWithValue method returns Node given parameter property
+func (linkedList *LinkedList) NodeWithValue(property int) *Node {
+	var node *Node
+	for node = linkedList.headNode; node != nil; node = node.nextNode {
+		if node.property == property {
+			nodeWith = node
+			break;
+		}
+	}
+	return nodeWith
+}
 func main() {
 	var linkedList LinkedList
 	linkedList = LinkedList{}
