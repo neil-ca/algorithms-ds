@@ -69,6 +69,8 @@ func (linkedList *LinkedList) NodeWithValue(property int) *Node {
 	}
 	return nodeWith
 }
+
+// AddAfter method adds a node with 
 func main() {
 	var linkedList LinkedList
 	linkedList = LinkedList{}
