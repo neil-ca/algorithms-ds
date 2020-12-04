@@ -1,11 +1,11 @@
 class Complejidad {
 	public static void main (String[] args) {
 		System.out.println("El # mayor es: " + max(50, 100));
-		double x[] = {1,2,3,4,5,6,7,8,9};
+		double x[] = {151.2,2,3,4,5,6,7,8,9};
 		int n = 9;
 		writeArray(x, n);
-		double d[] = {1,2,3,4,5,6,7,8,9};
-		System.out.println(sumArr(d, 9));
+		double d[] = {1,2,3,4.64,5.94,6.5,756.6,85.94,9.510};
+		System.out.println("Sum of array elements is:"+sumOfArray(d));
 	}
 
 	/*
@@ -19,9 +19,9 @@ class Complejidad {
 		else
 			return y;
 	}
-	/* 
+	/*
 	 * El metodo consta de un bucle que se ejcuta n veces, O(n), El cuerpo del bucle es
-	 * la llamada a println(), complejidad constante O(i). La complejidad del metodo es 
+	 * la llamada a println(), complejidad constante O(i). La complejidad del metodo es
 	 * O(n)*O(1) = O(n)
 	 * */
 	public static void writeArray(double[] x, int n) {
@@ -31,18 +31,12 @@ class Complejidad {
 		}
 	}
 
-	public static double sumArr(double[] d, int n) {
+	public static double sumOfArray(double[] d) {
 		double sum = 0;
-		int k = 0;
-		while (k < n) {
-			sum += d[k];
-			if (k == 0)
-				k = 2;
-			else
-				k = 2 * k;
+		for (double num : d) {
+			sum = sum + num;
 		}
 		return sum;
 	}
-
 }
 

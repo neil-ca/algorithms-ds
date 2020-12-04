@@ -1,4 +1,4 @@
-# COMPLEJIDAD DE LAS SENTENCIAS BÁSICAS DE JAVA
+# Complejidad de las sentencia básicas de java
 
 Al analizar la complejidad de un método no recursivo, se han de aplicar las propiedades de la notacion O y
 las siguientes consideraciones relativas al orden que tienen las sentencias, fundamentalmente a las estructuras
