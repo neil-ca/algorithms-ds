@@ -1,6 +1,6 @@
 public class Punto {
 	/* 
-	 * @author Neil Ulises
+	 * @author Uli
 	 * Clase que contiene las coordenadas x e y de un punto en un plano
 	 * */
 	private int x; 
