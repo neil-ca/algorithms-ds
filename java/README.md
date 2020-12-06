@@ -12,3 +12,12 @@ de los bloques `case`.
 la complejidad del bucle es el producto del número de iteraciones por la complejidad de las sentencias que forman el cuerpo del bucle.
 - La complejidad de un bloque se calcula como la suma de las complejidades de cada sentencia del bloque.
 - La complejidad de la llamada a un método es de orden 1, complejidad constante. Es necesario considerar la complejidad del método invocado.
+
+# Tipos abstractos de los datos(TAD)
+Caracteristica que permite ampliar el lenguaje añadiendo sus propios tipos de datos definidos por los usuarios.
+Un TAD se compone de estructuras de datos y procedimientos o funciones que manipulan esas estructuras de datos, que son
+invisibles a los usuarios o clientes es decir que los objetos tienen interfaces publicas sin embargo, las representaciones
+e implementaciones de esas interfaces son privadas.
+
+![alt text](https://i.ytimg.com/vi/2SYAdHaFthc/maxresdefault.jpg)
+
