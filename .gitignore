@@ -1,3 +1,5 @@
 c/*.out
 c/projMakeFile/*.o
 c/projMakeFile/hellomake
+
+java/*.class
