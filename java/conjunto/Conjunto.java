@@ -77,4 +77,7 @@ public class Conjunto  {
 		else
 			throw new Exception("Fuera de rango");
 	}
+	public static void main (String[] args) {
+		Conjunto [] c = new Conjunto[50];
+	}
 }
