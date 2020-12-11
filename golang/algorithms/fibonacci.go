@@ -7,6 +7,8 @@ import (
 func fibonacci(c, quit chan int) {
 	x, y := 1, 1
 	for {
+		// select is blocking by default and it continues to execute only when one of channels has data to send or receive. If several
+		// channels are ready to use at the same time, select chooses which to execute randomly.
 		select {
 		case c <- x:
 			x, y = y, x+y
