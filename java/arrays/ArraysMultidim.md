@@ -83,4 +83,65 @@ for (fila = 0; fila < Matriz.length; ++fila)
 	for (col = 0; col < Matriz[fila].length; ++col)
 	Procesar elemento Matriz[fila][col];
 ```
+## Arrays de más de dos dimensiones
+Raramente se requiera mas de dos o tres dimensiones. Un array tridimensional se puede considerar
+como un conjunto de arrays bidimensionales combinados para formar, en profundidad, una tercera dimension.
+El cubo se construye con filas (dimension vertical), columnas (dimension horizontal) y planos (dimension en profundiad).
+Por consiguiente, un elemento dado se localiza especificando su plano, fila y columna. Para declararlo:
+```java
+int equipos[][][] = new int[3][15][10];
+``` 
+Un ejemplo seria crear un array 3D para representar los caracteres de un libro y diseñar los bucles de acceso.
 
+En el definiriamos las 3 dimensiones, [PAGINAS] [LINEAS] [COLUMNAS], que definen el tamaño del
+array.
+El metodo para acceder a los caracteres es mediante bucles anidados. Dado que el libro se compone
+de un conjunto de paginas, el bucle mas externo es el bucle de página, y el bucle de columnas es 
+el bucle mas interno. El bucle de filas se insertara entre los dos bucles:
+```java
+int pagina, linea, columna;
+final int PAGINAS = 500;
+final int LINEAS = 45;
+final int COLUMNAS = 80;
+char libro[][][] = new char[PAGINAS][LINEAS][COLUMNAS];
+    for (pagina = 0; pagina < PAGINAS; ++pagina)
+     for (linea = 0; linea < LINEAS; ++linea)
+      for (columna = 0; columna < COLUMNAS; ++columna)
+        <procesar libro[pagina][linea][columna]>
+```
+## Utilizacion de arrays como parametros
+En java, todas las variables de tipos primitivos se pasan por valor. Por contra, los objetos se 
+pasan por referencia, entonces los arrays se pasan por referencia(direccion). Entonces cuando se llama a un 
+metodo que pide como parametro un array, se puede modificar el contenido de los elementos del array en el metodo.
+```java
+public static void main(String [] a)
+{
+    char palabra[]={'A','B','C','D'};
+    cambiar(palabra)
+}    
+void cambiar(char c[])
+{
+    c[2] = 'c';
+}
+```
+## Precauciones
+Un metodo conoce cuántos elementos existen en el array pasado como argumento. Puede
+ocurrir que no todos los elementos sean significativos, si esto ocurre hay que 
+pasar un segundo argumento que indique el numero real de elementos.
+```java
+int SumaDeEnteros(int []arrayEnteros, int n)
+{
+    int i, s;
+    for (i = s = 0; i < n;)
+        s += arrayEnteros[i++];
+    return s; 
+}
+``` 
+Aunque `SumaDeEnteros()` conoce la capacidad del array a través del atributo `length`, no sabe 
+cuantos elementos hay que sumar y por ello se le pasa el prametro n con el numero verdadero de 
+elementos. Una posible llamada al método es la siguiente:
+```java
+int lista[] = new int[33];
+n = 10;
+SumaDeEnteros(lista, n);
+```
