@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 /** Se lee una lista de, como máximo, 21 números enteros; se calcula su suma y el valor
  * maximo. La entrada de datos termina al introducir la clave -1
- * @author neil
+ * @author neil ulises
  * */
 public class SumMax {
     public static void main(String[] args) throws Exception{
