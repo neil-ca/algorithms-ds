@@ -1,3 +1,5 @@
+package arrays;
+
 public class SumArray {
 
 	static double suma (double [] w) {

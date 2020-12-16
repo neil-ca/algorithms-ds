@@ -1,5 +1,7 @@
+package arrays;
+
 import java.io.*;
-class copiArray {
+class CopyArray {
 
 	/*
 	 * Define dos arrays con 15 y 20 elementos. En el array v se guardan los valores

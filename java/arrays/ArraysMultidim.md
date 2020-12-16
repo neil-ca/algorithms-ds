@@ -1,17 +1,17 @@
 # Arrays Multidemencionales
 
-Son aquellos que tienen mas de una dimension y, en consecuencia, mas de un indice. Los mas
+Son aquellos que tienen mas de una dimension y, en consecuencia, más de un índice. Los más
 usuales son los de dos dimensiones, conocidos como tablas o matrices.
-El de 2 d (m x n) tendra un numero de elementos que sera el resultado del producto (m+1)*(n+1). Para
-localizar un elemento es por las coordenadas representadas por su numero de fila y su numero de columna
-(a,b). La sintaxis para declarar un array de 2D es:
+El de 2 d (m x n) tendría un número de elementos que será el resultado del producto (m+1)*(n+1). Para
+localizar un elemento es por las coordenadas representadas por su número de fila y su número de columna
+(a, b). La sintaxis para declarar un array de 2D es:
 
 ```java
 char c[][];
 int precios[][];
 double [][]matriz;
 ```
-Hasta ahora no se ha reservado memoria solo son referencias para instanciarlos y especificar el numero
+Hasta ahora no se ha reservado memoria solo son referencias para instanciarlos y especificar el número
 de filas y columnas es:
 ```java
 c = new char[80][24]; // matriz con 80 filas y 24 columnas
@@ -32,7 +32,7 @@ int tabla2[][] = {
 	{11,12,13,14,15}
 };
 ```
-No es necesaio crearlas con el mismo numero de filas y columnas ya que son
+No es necesario crearlas con el mismo número de filas y columnas, ya que son
 arrays de arrays se puede hacer lo siguiente:
 ```java
 int [] a = {1,2,3};
@@ -93,11 +93,11 @@ int equipos[][][] = new int[3][15][10];
 ``` 
 Un ejemplo seria crear un array 3D para representar los caracteres de un libro y diseñar los bucles de acceso.
 
-En el definiriamos las 3 dimensiones, [PAGINAS] [LINEAS] [COLUMNAS], que definen el tamaño del
+En él definiríamos las 3 dimensiones, [PAGINAS] [LINEAS] [COLUMNAS], que definen el tamaño del
 array.
-El metodo para acceder a los caracteres es mediante bucles anidados. Dado que el libro se compone
-de un conjunto de paginas, el bucle mas externo es el bucle de página, y el bucle de columnas es 
-el bucle mas interno. El bucle de filas se insertara entre los dos bucles:
+El method para acceder a los caracteres es mediante bucles anidados. Dado que el libro se compone
+de un conjunto de páginas, el bucle más externo es el bucle de página, y el bucle de columnas es 
+el bucle más interno. El bucle de filas se insertará entre los dos bucles:
 ```java
 int pagina, linea, columna;
 final int PAGINAS = 500;
@@ -111,8 +111,8 @@ char libro[][][] = new char[PAGINAS][LINEAS][COLUMNAS];
 ```
 ## Utilizacion de arrays como parametros
 En java, todas las variables de tipos primitivos se pasan por valor. Por contra, los objetos se 
-pasan por referencia, entonces los arrays se pasan por referencia(direccion). Entonces cuando se llama a un 
-metodo que pide como parametro un array, se puede modificar el contenido de los elementos del array en el metodo.
+pasan por referencia, entonces los arrays se pasan por referencia(dirección). Entonces cuando se llama a un 
+method que pide como parámetro un array, se puede modificar el contenido de los elementos del array en el método.
 ```java
 public static void main(String [] a)
 {
@@ -125,9 +125,9 @@ void cambiar(char c[])
 }
 ```
 ## Precauciones
-Un metodo conoce cuántos elementos existen en el array pasado como argumento. Puede
+Un method conoce cuántos elementos existen en el array pasado como argumento. Puede
 ocurrir que no todos los elementos sean significativos, si esto ocurre hay que 
-pasar un segundo argumento que indique el numero real de elementos.
+pasar un segundo argumento que indique el número real de elementos.
 ```java
 int SumaDeEnteros(int []arrayEnteros, int n)
 {
@@ -138,10 +138,16 @@ int SumaDeEnteros(int []arrayEnteros, int n)
 }
 ``` 
 Aunque `SumaDeEnteros()` conoce la capacidad del array a través del atributo `length`, no sabe 
-cuantos elementos hay que sumar y por ello se le pasa el prametro n con el numero verdadero de 
+cuantos elementos hay que sumar y por ello se le pasa el parámetro n con el numero verdadero de 
 elementos. Una posible llamada al método es la siguiente:
 ```java
 int lista[] = new int[33];
 n = 10;
 SumaDeEnteros(lista, n);
 ```
+## Nota
+Se pueden utilizar dos formas alternativas para permitir que un método conozca el número de elementos
+asociados con un array que se pasa como argumento al método:
+- Situar un valor de señal al final del array que indique al método
+que se ha de detener el proceso en ese momento.
+- pasar un segundo argumento que indique el número de elementos del array.

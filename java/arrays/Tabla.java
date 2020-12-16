@@ -1,10 +1,12 @@
+package arrays;
+
 import java.io.*;
 
 /**
  * Da entrada y visualizacion de un array 2D
  * @author Neil Ulises
  * */
-class tabla {
+class Tabla {
 	public static void main (String[] args) throws Exception {
 		int v[][] = new int[3][5];
 		leer(v);

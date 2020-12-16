@@ -3,3 +3,7 @@ c/projMakeFile/*.o
 c/projMakeFile/hellomake
 
 java/*.class
+java/.idea
+java/Algorithms..iml
+java/out
+
