@@ -37,3 +37,28 @@ serialization, and encryption are handled here.
 * Application layer (7): The applications that the user interfaces with (for example,
 web browsers and email clients) exist here. These applications make use of the
 services provided by the six lower layers.
+
+## TCP/IP layer model
+The **TCP/IP protocol suite** is the most common network communication in use today.
+The TCP/IP reference model differs a bit from the OSI model, as it has only 
+four layers instead of seven.
+
+![](https://nebul4ck.files.wordpress.com/2015/02/ositcpip1.png?w=960&h=933)
+
+* Network Access layer(1): On this layer, physical connections and data framing happen.
+Sending an Ethernet or Wi-Fi packet are examples of layer 1 concerns.
+* Internet layer(2): This layer deals with the concerns of addressing packets and 
+routing them over multiple interconnections networks. It's at this layer that an IP address is defined.
+* Host-to-Host layer(3): The host-to-host layer provides two protocols, TCP and UDP, these protocols
+address concerns such as data order, data segmentation, network congestion, and error connection.
+* Process/Application layer(4): The process/application layer is where protocols such as HTTP, SMTP, and FTP 
+are implemented. 
+
+## Data encapsulation
+The advantage of these abstraction is that, when programming an application, we only need to consider 
+the highest-level protocol. For example, a web browser needs only to implement the protocols dealing 
+specifically with HTTP, HTML, CSS, and so on. 
+It does not need to bother with implementing TCP/IP, and it certainly doesn't have to understand
+how an Ethernet or Wi-Fi packet is encoded. It can rely on ready-made
+implementations of the lower layers for these tasks. These implementations are provided by
+the operating system (for example, Windows, Linux, and macOS).
