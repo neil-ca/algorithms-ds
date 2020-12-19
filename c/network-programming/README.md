@@ -20,3 +20,20 @@ Ethernet cable, what each pin on a connector is for, the radio frequency of Wi-F
 * Data Link(2):This level builds on the physical layer. It deals with protocols for directly 
 communicating between two nodes. It defines how a direct message between nodes starts and ends (framing), 
 error detection and correction, and flow control. 
+* Network layer(3): The network layer provides the methods to transmit data sequences (called packets) between nodes in different networks. It
+provides methods to route packets from one node to another (without a direct physical
+connection) by transferring through many intermediate nodes. Thisi is the layer that the 
+Internet Protocol is defined on, which we will go into in some depth later.
+* Transport layer (4): At this layer, we have methods to reliably deliver variable
+length data between hosts. These methods deal with splitting up data,
+recombining it, ensuring data arrives in order, and so on. The Transmission
+Control Protocol (TCP) and User Datagram Protocol (UDP) are commonly said
+to exist on this layer.
+* Session layer (5): This layer builds on the transport layer by adding methods to
+establish, checkpoint, suspend, resume, and terminate dialogs.
+* Presentation layer (6): This is the lowest layer at which data structure and
+presentation for an application are defined. Concerns such as data encoding,
+serialization, and encryption are handled here.
+* Application layer (7): The applications that the user interfaces with (for example,
+web browsers and email clients) exist here. These applications make use of the
+services provided by the six lower layers.
