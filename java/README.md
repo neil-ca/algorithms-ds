@@ -21,3 +21,18 @@ e implementaciones de esas interfaces son privadas.
 
 ![alt text](https://i.ytimg.com/vi/2SYAdHaFthc/maxresdefault.jpg)
 
+## Diseño de clases derivadas
+En el diseño de una aplicacion orientada a objetos no siempre resulta facil establecer la relacion de herencia
+más optima entre clases. Consideremos, por ejemplo, a los empleados de una empresa. Existen diferentes tipos de clasificadores segun el criterio 
+de seleccion(discriminador), que pueden ser: modo de pago(sueldo fijo, por horas, a comision), didicacion a la empresa(plena o parcial)
+o estado de su relacion laboral con la empresa(fijo o temporal).
+Una clasificacion de los empleados basada en el modo de pago puede dividirlos en empleados con salario mensual
+fijo, empleados con pago por horas de trabajo y empleados con pago a comsion por las ventas realizadas.
+
+Una dificultad añadida a la que se enfrenta el diseñador es que un mismo objeto, en el supuesto anterior, un 
+mismo empleado, puede pertenecer a diferentes grupos. Un empleado con dedicacion plena puede ser remunerado con un salario mensual, etc.
+Una pregunta usual es: ¿Cual es la relacion que describe la mayor cantidad de variacion en los atributos de las
+clases y operaciones? ¿esta relacion ha de ser cuando se tenga presente la aplicaion real a desarrollar.
+
+
+
