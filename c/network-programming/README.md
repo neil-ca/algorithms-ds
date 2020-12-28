@@ -62,3 +62,4 @@ It does not need to bother with implementing TCP/IP, and it certainly doesn't ha
 how an Ethernet or Wi-Fi packet is encoded. It can rely on ready-made
 implementations of the lower layers for these tasks. These implementations are provided by
 the operating system (for example, Windows, Linux, and macOS).
+![abstraction](protocol.png)
