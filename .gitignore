@@ -1,4 +1,5 @@
 c/*.out
+c/network-programming/*unix_list
 c/projMakeFile/*.o
 c/projMakeFile/hellomake
 
