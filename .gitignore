@@ -1,10 +1,15 @@
-c/*.out
-c/network-programming/*unix_list
-c/projMakeFile/*.o
-c/projMakeFile/hellomake
 
-java/*.class
-java/.idea
-java/Algorithms..iml
-java/out
+# Ignore all
+*
+# Unignore all with extensions
+!*.java
+!*.c
+!*.go
+# Unignore all dirs
+!*/
+
+#java/*.class
+#java/.idea
+#java/Algorithms..iml
+#java/out
 
