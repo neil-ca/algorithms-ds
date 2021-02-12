@@ -2,8 +2,7 @@
 #define N_ELEMENTOS 10
 
 int main() {
-	int m[N_ELEMENTOS];
-	int i = 0;
+	int m[N_ELEMENTOS], i;
 
 	printf("Introduce los valores de la matriz\n");
 
