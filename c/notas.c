@@ -6,6 +6,7 @@ int main() {
   scanf("%f", &Nota);
   if (Nota >= 6) {
     puts("Aprobado");
+  } else {
+    puts("Reprobado");
   }
-
 }
