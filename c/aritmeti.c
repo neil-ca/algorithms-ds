@@ -21,8 +21,8 @@ int main()
 	// Cociente
 	resultado = dato1 / dato2;
 	printf("%d / %d = %d\n", dato1, dato2, resultado);
- 	
+
 	// Resto
 	resultado = dato1 % dato2;
 	printf("%d % %d = %d\n", dato1, dato2, resultado);
-}	
+}
