@@ -1,12 +1,12 @@
 
 # Ignore all
-*
+#*
 # Unignore all with extensions
-!*.java
-!*.c
-!*.go
+#!*.java
+#!*.c
+#!*.go
 # Unignore all dirs
-!*/
+#!*/
 
 #java/*.class
 #java/.idea
