@@ -13,4 +13,8 @@ def searchBinary(myList, item):
                 first = mid + 1
         return foundFlag
 
-print(searchBinary([10,15,20], 10))
+print(searchBinary([8,9,10,100,1000], 10))
+print(searchBinary([8,9,10,100,1000], 2))
+print(searchBinary([1,2,3], 2))
+print(searchBinary([1,2,3], 4))
+print(searchBinary([10,20,30, 40], 10))
