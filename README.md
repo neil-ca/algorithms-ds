@@ -17,3 +17,15 @@ For example, a recursive algorithm may be more easily implemented, exhibiting be
   * Sets: Unordered bags of elements 
   * Dictionary: Unordered bags of key-values pairs 
   * Data frames: Two-dimensional structures to store two dimensional data 
+
+#### The time complexity of lists 
+The time complexity of various functions of a list can be summarized as follows using the 
+Big O notation:
+
+| Different methods                 | Time complexity  |
+| :-------------------------------: | :--------------: | 
+| Insert an element                 | O(1)             | 
+| Delete an elment                  | O(n)(as in the worst case may have to iterate the whole list)  | 
+| Slicing a list                    | O(n)  | 
+| Element retrieval                | O(n)  | 
+| Copy                               | O(n)  | 
