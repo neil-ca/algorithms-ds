@@ -11,7 +11,7 @@ if we want delete the third element -> p[2] then
 
 #include <stdio.h>
 
-void main()
+int main()
 {
     int p[100], i, n, a;
     printf("Enter the length of the array: ");
