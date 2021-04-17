@@ -12,5 +12,18 @@
 #java/.idea
 #java/Algorithms..iml
 #java/out
+
+# Ignore Gradle project-specific cache directory
+# Ignore Gradle build output directory
+java/tdd/build
+java/tdd/app/.classpath
+java/tdd/app/.project
+java/tdd/app/.settings/
+java/tdd/app/bin/
+java/tdd/app/build/
+java/tdd/.gradle/
+java/tdd/.project
+java/tdd/.settings/
+
 *.out
 .vim
