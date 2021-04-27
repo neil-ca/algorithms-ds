@@ -27,3 +27,4 @@ java/tdd/.settings/
 
 *.out
 .vim
+*.db

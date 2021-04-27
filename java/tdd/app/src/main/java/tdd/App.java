@@ -3,6 +3,12 @@
  */
 package tdd;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -10,5 +16,50 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        connect();
+    }
+
+    public static void connect() {
+        Connection conn = null;
+        try {
+            String url = "jdbc:sqlite:test.db";
+            // Create a connection to the database 
+            conn = DriverManager.getConnection(url);
+            System.out.println("Connection to Sqlite has been esablished");
+            Statement stmt = conn.createStatement();
+            String s = "create table if not exists STUDENT(SId int, SName varchar(10), MajorId int, GradReay int)";
+            stmt.executeUpdate(s);
+            System.out.println("Table crated");
+            //s = "insert into STUDENT(SId, SName, MajorId, GradReay) values ";
+            //String[] stuVals = {"(1, 'Joe', 10, 2021)", 
+                //"(2, 'Neil', 20, 2020)",
+                //"(3, 'max', 10, 2022)",
+                //"(4, 'sue', 20, 2022)",
+                //"(5, 'bob', 30, 2020)",
+                //"(6, 'kim', 20, 2020)",
+                //"(7, 'art', 30, 2021)",
+                //"(8, 'pat', 20, 2019)",
+                //"(9, 'lee', 10, 2021)"};
+            //for (int i= 0; i < stuVals.length; i++)
+                //stmt.executeUpdate(s + stuVals[i]);
+            //System.out.println("Students records inserted");
+            String qry = "select SName from STUDENT where MajorId = 10";
+            ResultSet rs = stmt.executeQuery(qry);
+            System.out.println("Name Student");
+            while(rs.next()) {
+                String name = rs.getString("SName");
+                System.out.println("Student " + name);
+            }
+        }catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch(SQLException ex) { System.out.println(ex.getMessage()); }
+        }
+
     }
 }
+
