@@ -29,3 +29,5 @@ Big O notation:
 | Slicing a list                    | O(n)  | 
 | Element retrieval                | O(n)  | 
 | Copy                               | O(n)  | 
+
+se
