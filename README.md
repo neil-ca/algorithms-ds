@@ -1,5 +1,9 @@
 [![GoDoc](https://godoc.org/github.com/emirpasic/gods?status.svg)](https://godoc.org/github.com/emirpasic/gods)
 
+The management of data is one of the most important considerations to bear in mind while designing
+any application. The purpose of any application is to get some data as input, process or operate
+on in, and then provide suitable data as output.
+
 ## Mix of ds and algorithms 
 This repo pretend understand and fun with datastructures and algorithms.
 
