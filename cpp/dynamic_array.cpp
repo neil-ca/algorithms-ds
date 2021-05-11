@@ -31,7 +31,7 @@ class dynamic_array {
     T& at(int index) {
         if(index < n) 
             return data[index];
-            throw "Index out of range";
+        throw "Index out of range";
     }
     size_t size() const {
         return n;

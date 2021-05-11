@@ -13,7 +13,7 @@ int sumArray(std::array<int, 5> arr) {
 int main() {
     std::array<int, 5> arr1 = {1,2,3,4,5};
     std::cout << sumArray(arr1) << std::endl;
-    
+
     std::cout << arr1.front() << std::endl; // 1
     std::cout << arr1.back() << std::endl; // 5
     std::cout << *(arr1.data() + 1) << std::endl; // 2
