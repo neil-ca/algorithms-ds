@@ -34,4 +34,4 @@ Big O notation:
 | Element retrieval                | O(n)  | 
 | Copy                               | O(n)  | 
 
-se
+sell
