@@ -26,5 +26,5 @@ int main()
     std::cout << "Winner before 5 years was: " << *it << std::endl;
     // Going back will result in compile time error as forward_list only allows us to move towards the end.
         // advance(it1, -2);      // Compiler error
-    it1 += 2;
+    //it1 += 2;
 }
