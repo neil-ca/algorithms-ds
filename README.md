@@ -22,6 +22,12 @@ For example, a recursive algorithm may be more easily implemented, exhibiting be
   * Dictionary: Unordered bags of key-values pairs 
   * Data frames: Two-dimensional structures to store two dimensional data 
 
+#### Big O notation
+Is a mathematical notation that describes the limiting behavior of a function and we can 
+classify algorithms according to how their run time or space requirements grow as the 
+input size grows.
+
+
 #### The time complexity of lists 
 The time complexity of various functions of a list can be summarized as follows using the 
 Big O notation:
@@ -34,4 +40,3 @@ Big O notation:
 | Element retrieval                | O(n)  | 
 | Copy                               | O(n)  | 
 
-sell
