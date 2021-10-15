@@ -26,6 +26,7 @@ int main()
     for (i = 0; i < 2 ; i++) {
         for(j = 0; j < 4; j++) {
             matR[i][j] = 0;
+            // 8 iterations is the result of matR[2][4] 
             for(k = 0; k < 3; k++) {
                 matR[i][j]=matR[i][j]+matA[i][k]*matB[k][j];
             }
