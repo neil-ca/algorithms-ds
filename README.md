@@ -40,3 +40,51 @@ Big O notation:
 | Element retrieval                | O(n)  | 
 | Copy                               | O(n)  | 
 
+#### DataFrames
+Is a data structure used to store tabular data available in Python's `pandas`
+package or in onther languages like R or Apache spark. It is one of the most 
+important data structures for algorithms and is used to process traditional structured data.
+
+|id   |  name  |  age |  decision  |
+|:---:|:------:|:----:|:----------:|
+|1    |fares   |32    |True        |
+|2    |Elena   |18    |False       |
+|3    |Steven  |40    |False       | 
+
+```python
+>>> import pandas as pd
+>>> df = pd.DataFrame([
+...  ['1', 'Fares', 32, True],
+...  ['2', 'Elena', 23, False],
+...  ['3', 'Steven', 40, True]])
+>>> df.columns = ['id', 'name', 'age', 'decision']
+>>> df
+```
+
+### Terminologies of DataFrames
+Let's look into some of the terminologies that are used in the context of a DataFrame:
+ * Axis: In the pandas documentation, a single column or row of a DataFrame is called an axis.
+ * Axes: If there is more than one axis, they are called axes as a group
+ * Label: A DataFrame allows the naming of both columns and rows with what's called a label
+
+#### Creating a subset of a DataFrame
+Fundamentally, there are two main ways of creating the subset of a DataFrame:
+ * Column selection
+ * Row selection
+##### Column Selection
+In machine learning algorithms, selecting the right set of features is an important
+task. We can select through position or specifying a filter 
+```python
+>>> df[['name','age']]
+# A column can be retrieved by its position as follows 
+>>> df.iloc[:,3]
+>>> df.iloc[0:2,:]
+```
+To create a subset using a filter, we need to use one or more colums to define 
+the selection criterion.
+```python
+>>> df[df.age>30]
+
+>>> df[(df.age < 35)&(df.decision==True)]
+```
+
