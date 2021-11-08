@@ -88,3 +88,15 @@ the selection criterion.
 >>> df[(df.age < 35)&(df.decision==True)]
 ```
 
+### Stacks
+A stack is a linear data structure to store a one-dimensional list. And store 
+in `Last-In, First-Out(LIFO)`. The time complexity in the 4 elements is: O(1)
+
+### Queues
+The elements are added and removed in `FIFO` format.
+
+### Tree
+A tree is one of the mos useful data structures due to its hierarchical data storage
+capabilities. While designing algorithms, we use trees wherever we need to represent
+hierarchical relationships among the data elements
+
