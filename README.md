@@ -98,5 +98,23 @@ The elements are added and removed in `FIFO` format.
 ### Tree
 A tree is one of the mos useful data structures due to its hierarchical data storage
 capabilities. While designing algorithms, we use trees wherever we need to represent
-hierarchical relationships among the data elements
+hierarchical relationships among the data elements that we need to store or process.
+
+Each tree has a finite set of nodes so that it has a starting data element called 
+`root` and a set of nodes joined together by links called `branches`.
+
+#### Terminology
+![tree](tree.png)
+
+#### Types of trees
+  * Binary tree: If the degree of a tree is two, that tree is called binary tree. 
+  * Full tree: Is the one in which all of the nodes are of the same degree, which
+  will be equal to the degree of the tree.
+  * Perfect tree: Is a full tree in which all the leaf nodes are the same level.
+  * Ordered tree: If the children of a node are organized in some order according
+  to particular criteria, the tree is called an ordered tree. For example can be ordered
+  left to right in an ascending order in which the nodes at the same level will increase
+
+![types-tree](types-tree.png)
+
 
