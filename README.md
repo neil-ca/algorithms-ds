@@ -12,7 +12,8 @@ and trees, which are needed to develop complex algorithms.
 
 ### Data Structures Used in algorithms
 Algorithms need necessary in-memory data structures that can hold temporary data while executing. Choosing the right data
-structures is essential for their efficient implementation. Certain classes of algorithms are recursive or iterative in logic and need data structures that ase specially designed for them.
+structures is essential for their efficient implementation. Certain classes of algorithms are recursive or iterative in
+logic and need data structures that ase specially designed for them.
 For example, a recursive algorithm may be more easily implemented, exhibiting better performance, if nested data structures are used. 
 
 #### Common data structures
@@ -26,7 +27,6 @@ For example, a recursive algorithm may be more easily implemented, exhibiting be
 Is a mathematical notation that describes the limiting behavior of a function and we can 
 classify algorithms according to how their run time or space requirements grow as the 
 input size grows.
-
 
 #### The time complexity of lists 
 The time complexity of various functions of a list can be summarized as follows using the 
@@ -91,9 +91,11 @@ the selection criterion.
 ### Stacks
 A stack is a linear data structure to store a one-dimensional list. And store 
 in `Last-In, First-Out(LIFO)`. The time complexity in the 4 elements is: O(1)
+[implementation](python/stack.py)
 
 ### Queues
 The elements are added and removed in `FIFO` format.
+[implementation](python/queue.py)
 
 ### Tree
 A tree is one of the mos useful data structures due to its hierarchical data storage
@@ -116,5 +118,22 @@ Each tree has a finite set of nodes so that it has a starting data element calle
   left to right in an ascending order in which the nodes at the same level will increase
 
 ![types-tree](types-tree.png)
+
+## Sorting and searching algorithms
+This is an important class of algorithms and depending of many aspects as the amount
+of data there are some better approaches than others. The following are types of
+sorting algorithms:
+ * Bubble sort
+ * Merge sort
+ * Insertion sort
+ * Shell sort
+ * Selection sort
+
+### Bubble Sort 
+Is the simplest and slowest algorithm used for sorting. It is designed in a way
+that the highest value in its list bubbles its way to the top as the algorithm
+loops through iterations. As it worst-case performance is O(N^2), it should be
+used for smaller datasets.
+
 
 
