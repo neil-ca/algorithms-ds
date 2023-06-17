@@ -24,7 +24,7 @@ java/tdd/app/build/
 java/tdd/.gradle/
 java/tdd/.project
 java/tdd/.settings/
-
+rust/hashmap/target/
 *.out
 .vim
 *.db
